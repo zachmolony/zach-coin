@@ -1,2 +1,3 @@
 # zach-coin
-Creating a blockchain using python
+
+Creating a blockchain in object oriented python
