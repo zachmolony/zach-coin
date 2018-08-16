@@ -1,6 +1,7 @@
 # written by zachmolony 16/08/18
 
 import hashlib
+import datetime
 
 class Block:
     def __init__(self, previous_block_hash, data, timestamp):
@@ -8,6 +9,10 @@ class Block:
         self.data = data
         self.timestamp = timestamp
         self.hash = self.get_hash
+
+    # create genesis Block
+    def create_genesis_block():
+        return Block("0", "0", datetime.datetime.now())
 
     # get hash method which hashes entire Block info
     def get_hash(self):
