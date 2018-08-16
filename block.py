@@ -11,6 +11,7 @@ class Block:
         self.hash = self.get_hash
 
     # create genesis Block
+    @staticmethod # does not need self instance as is first block
     def create_genesis_block():
         return Block("0", "0", datetime.datetime.now())
 
